@@ -7,6 +7,7 @@ import Posts from './features/blog/pages/Posts';
 import PostDetail from './features/blog/pages/PostDetail';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import Layout from './components/Layout';
+import Contact from './features/contact/pages/Contact';
 
 export const AppRouter = () => {
   return (
@@ -29,6 +30,7 @@ export const AppRouter = () => {
           <Route path="profile" element={<Profile />} />
           <Route path="blog" element={<Posts />} />
           <Route path="blog/:id" element={<PostDetail />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
 
         {/* Ruta catch-all */}
